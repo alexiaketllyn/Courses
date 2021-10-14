@@ -1,0 +1,248 @@
+<p> Encontre-me</p>
+
+<ul>
+    <li><a href="https://rocketseat.com.br" target="_blank">Website</a></li>
+    <li><a href="mailto:mayk@rocketseat.com.br">Email</li>
+    <li><a href="tel:+5511998887766">Telefone</a></li>       
+</ul>
+
+<p>Saiba mais</p>
+<ul>
+    <li><a href="#about">Sobre mim</a></li>
+    <li><a href="#History">História</a></li>
+    <li><a href="#Works">Trabalhos</a></li>
+</ul>
+
+<h1 id="about">Sobre mim</h1>
+jfgighojfithtrjodjvfgnvokxovgjtjg0cfdn
+
+<h2 id="History">História</h2>
+ofjirgjopkfobrtjg0kfcrtjbh9tujh0lfbhj9j
+
+<h2 id="Works">Trabalhos</h2>
+kfdnierfevbnrtgj0fkdortj9ekwderhg854efj
+
+<!--
+     Conteúdo dos hyperlinks
+
+     - Qualquer conteúdo
+-->
+
+<a href="http://google.com" title="ir para google">Google</a>
+   <h1>Google</h1>
+   <p>Claro que posso</p>
+   <img src="https://source.unsplash.com/random" alt="">
+</a>
+
+<!--
+
+    URLs e caminhos dos arquivos 
+
+    -Uniform Resource Locator
+    -https://www.rocketseat.com.br
+    -sequẽncia de texto que define onde algo está localizado na web
+    -URL usam caminhos para encontrar arquivos
+
+    - Caminhos dos arquivos
+    - Onde, no explorador de arquivos, um recurso está localizado
+
+-->
+
+<a href="hyperlinks.html">abrir Hyperlinks</a>
+
+<!--
+     Como navegar pelos caminhos?
+
+     - mesmo diretório
+     - entrando em dretórios
+     - saindo de diretórios ../
+     - diretório raíz (root ou pai) ./
+-->
+
+<!--
+
+    URLs absolutos versus relativos
+
+    - Absolutos
+     - Inclui protocolo e nome de domínio
+        - http://www.rocketseat.com.br/projeto/index.html
+    - Sempre apontará para o mesmo local, pois é absoluto
+
+    - Relativos
+      - relativo à página aberta no momento
+      - apontará para lugares diferentes
+-->
+
+<a href="google.com">relativo: ir para o google</a>
+<a href="https://google.com"> absoluto: ir para o google</a>
+
+<!--
+
+    <tables>
+
+        Prós
+        - visualização de dados via linhas e colunas
+        - boa acessibilidade para leitura de dados
+
+        Contras
+        - pouco flexivel
+        - precisa de estabilização para melhor visualização
+
+        Não usar 
+        - para criar seu layout
+-->
+
+<table>
+
+    <caption>pessoas por idade</caption>
+
+    <thead>
+    <tr>
+    <th>Nome</th>
+    <th>Idade</th>
+</tr>
+</thead>
+<tr>
+    <tbody>
+    <td>Mayk</td>
+    <td>35</td>
+    <tr>
+        <td>Diego</td>
+        <td>25</td>
+    </tbody>  
+    <tfoot>
+        <td>Total:</td>
+        <td>2 pessoas</td>
+    </tfoot>      
+</table>
+
+<!--
+
+    2 lojas
+        Quantos produtos foram produzidos
+        vendidos e agrupado por nome dos produtos
+-->
+
+<table>
+
+    <caption>Produzidos x Vendidos por loja</caption>
+
+
+    <colgroup>
+    <col>
+    <col span="2" style="background-color:red">
+    <col span="2" style="background-color: blue;">
+    </colgroup>
+    
+    <thead>
+        <tr>
+
+        <th rowspan="2"></th>
+        <th colspan="2" scope="colgroup">Afonso Pena </th>
+        <th colspan="2" scope="colgroup">Antônia Pereira </th>
+        </tr>
+
+        <th scope="col">Produzidos</th>
+        <th scope="col">Vendidos</th>
+        <th scope="col">Produzidos</th>
+        <th scope="col">Vendidos</th>
+    
+    </thead>
+    <tbody>
+     <tr>
+        <th scope="row">vassouras</th>
+        <td>50</td>
+        <td>30</td>
+        <td>20</td>
+        <td>20</td>
+    </tr>
+
+    <tr>
+        <th>Baldes</th>
+        <td>10</td>
+        <td>10</td>
+        <td>30</td>
+        <td>25</td>
+    </tr>
+    </tbody>
+</table>
+
+<!--
+     <head>
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<!--
+    <meta>
+
+    atributos
+    - charset
+    - name
+    - content
+-->
+
+<head>
+    <!-- codificação de caracteres especiais-->
+    <meta charset="UTF-8">
+
+    <!-- portabilidade para dspositivos mobiles-->
+    <meta name="viewport" content="width=device, initial-scale=1.0">
+
+
+</head>
+
+<!--
+    <link> para ícones personalizados
+-->
+
+<!-- favicon básico-->
+<link rel="icon" href="/icons/icon-48x48.png?v=cfca599cb367ccaf7377d56ddc7542f5"/>
+
+
+<!--
+    <meta>
+
+    - charset
+    - viewport
+    - author
+    - description
+    - robots
+-->
+
+<head>
+    <!--SEO: SEARCH ENGINEOPTIMIZATION-(motores de busca= google)-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Mayk Brito">
+    <meta name="description" content="Um website para iniciantes em programação">
+    <meta name="robots" content="noindex,nofollow, index, follow">
+
+    </head>
+
+    <!--
+        <meta> para redes sociais
+    -->
+
+    <head>
+        <!-- Open Graph: facebook-->
+        <meta property="og:image" content="https://cdn-images-1.medium.com/max/92/
+        1*TkXVfLTwsHdwpUEjGzdi9w@2x.jpeg">
+        <meta property="og: description" content="Aqui vem um texto para ser mostrado ao compartilhar no
+        facebook">
+
+        <!-- twitter-->
+        <meta name="twitter:title" content="Rocketseat">
+    </head>
+
+
+
+
+
+
+   
