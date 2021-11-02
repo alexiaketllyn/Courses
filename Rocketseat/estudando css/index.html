@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h1 {
+            color: blue;
+        }
+
+        strong {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="color: blue;">
+        Título
+        <strong style="color:red">alo
+    </h1>
+</body>
+
+#A Cascata (cascading)
+
+A escolha do browser de qual regra aplicar, caso haja muitas regras para o mesmo elemento.
+
+* Seu estilo é lido de cima para baixo.
+
+É levado em consideração 3 fatores
+
+1. Origem do estilo
+2. Especificidades
+3. Importância
+
+### Origem do estilo
+
+inline> tag style > tag link
+
+### Especificidades
+
+É um cálculo matemático, onde, cada tipo de seletor e origem do estilo, possuem
+valores a serem considerados.
+
+0. Universal selector, combinators e negation pseudo-class (:not())
+1. Element type selector e pseudo-elements (::before, ::after)
+10. Classes e atribute selectors ([type="radio"])
+100. ID selector
+1000. Inline
+
+## A regra !important
+
+* Cuidado, evite o uso
+* Não é considerado uma boa prática
+* Quebra o fluxo natural da cascata
+
+# At-rules 
+
+* Está relacionado ao comportamento do css 
+* Começa com o sinal de '@' seguido de identificador e valor 
+
+## Exemplos comuns
+
+- @important        /* incluir um css externo */
+-@media             /* regras condicionais para dispositivos */
+-font-face          /* fontes externas*/ 
+-@keyframes         /* animation */
+
+```CSS 
+@import url("http://local.com/style.css");
+
+@media (min-width: 500px) {
+    /* rules here */
+}
+
+# Shorthand
+
+* Junção de propriedades
+* Resumido 
+* Legível
+
+```css 
+{
+    /* background properties */
+    background-color: #000;
+    background-image: url(images/bg.gif);
+    background-repeat: no-repeat;
+    background-position: left top;
+
+    /* background shorthand */
+
+    background-color: #000 url(images/bg.gif) no-repeat left top;
+
+    /* font properties */
+
+    font-style: italic;
+    font-weight: bold;
+    font-size: .8em;
+    line-height: 1.2;
+    font-family: Arial, sans-serif;
+
+    /* font shorthand */
+    font: italic bold .8em/1.2 Arial, sans-serif;
+
+    ## Detalhes
+
+    * Não irá considerar propriedades anteriores
+    * valores não especificados irão assumir o valor padrão
+    * geralmente, a ordem descrita não importa, mas, se houver muitas propriedades
+    com valores semelhantes, poderemos encontrar problemas
+
+
+    ## Propriedades que aceitam shorthand 
+    
+    animation, background, border, border-botton, border-color, border-left,
+    border-radius, border-right, border-style, border-top, border-width,
+    column-rule, columns, flex, flex-flow, font, grid, grid-area, grid-column,
+    grid-row, grid-template, list-style, margin, offset, outline, overflow, padding
+    place-content, place-items, place-self, text-decoration, transition
+
+    **https://developer.mozilla.org/en-US/docs/web/CSS/shorthand_properties**
+
+    # Funções 
+
+    * nome seguido de abre e fecha parentesis
+    * recebe argumentos
+
+    # Exemplos
+
+    ```css 
+    @import url("http://urlaqui.com/style.css");
+
+    {
+        color: rgb(255, 0, 100);
+        width: calc(100% - 10px);
+    }
+
+    # Vendor prefixes 
+
+    permite que browsers adicione 'features'
+    a fim de colocar em uso alguma novidade que vemos no css 
+
+    # Exemplo
+
+    ```css 
+    p 
+    -webkit-background-clip: text;      /* chrome, safari, ios e android */
+    -moz-background-clip: text;         /* mozilla, (firefox) */
+    -ms-background-clip: text;          /* internet explorer */
+    -o-background-clip: text;           /* opera */
+
+    # consultas 
+
+    [http://ireade.github.io/which-vendor-prefix/]
+    [http://caniuse.com]
+
+    
+
+
+
+
+
+
+
+
+
+
+}
