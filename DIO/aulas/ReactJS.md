@@ -109,6 +109,35 @@ Principais conceitos do Webpack:
 - Production trás otimizações internas
 - Development - é executado com três plugins: UglifyJSplugin, ModudleConcatenationPlugin e NoEmitOnErrorsPlugin.
 
+## Renderização Condicional
+
+Em React, você ode criar componentes distintos que encapsulam o comportamento que você precisa. Então, você pode renderizar apenas alguns dos elementos, dependendo do estado da aplicação.
+
+- Variáveis de Elementos;
+- If inline comn o Operador Lógico &&
+- If-else inline com Operador Condicional
+- Evitando que um Componente seja Renderizado
+
+## Listas e Chaves
+
+- Renderizando Múltiplos Componentes
+- Componente de Lista Básico
+- Chaves
+- Extraindo Componentes com Chaves
+- Chaves devem ser Únicas apenas entre Elementos irmãos
+
+## Manipulando Eventos
+
+Manipular eventos em elementos React é muito semelhante a manipular eventos em elementos do DOM. Existem algumas diferenças sintáticas:
+
+- Eventos em React são nomeados usando camelCase ao invés de letras minúsculas.
+- Com o JSX você passa uma função como manipulador de eventos ao invés de um texto.
+
+- Eventos
+- Passando argumentos para manipuladores de eventos
+
+
+
 
 
 
